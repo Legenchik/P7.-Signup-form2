@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Підписки</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="card" id="subscription-card">
+        <img src="assets/philip-oroni-7rMD7zh5SKo-unsplash.jpg" alt="Email Icon" class="card-image">
+        
+        <div class="card-content">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Join thousands getting emails in their inbox.</p>
+            
+            <form id="subscription-form" novalidate>
+                <div class="form-group">
+                    <input type="email" id="email-input" placeholder="email@example.com" required>
+                    <p id="error-message" class="error-message">
+                        Please enter the valid email
+                    </p>
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </main>
+
+    <dialog id="success-dialog">
+        <img src="assets/Icon.png" alt="Success Icon" class="success-icon">
+        <h2>Your subscription has been placed for <br> <strong id="user-email"></strong>!</h2>
+        <button id="close-dialog-btn" class="btn">Thanks!</button>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
